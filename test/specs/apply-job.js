@@ -8,7 +8,7 @@ const applyPage = require('../pageobjects/apply-page');
 describe('Job Application', () => {
   // Declare data to test
   const credentials = coreHelper.readFile('../data/applyData.json');
-  const endpoint = coreHelper.readFile('../data/urlData.json');
+  const endpoint = coreHelper.readFile('../data/endpointData.json');
 
   it('should search the job successfully', () => {
     // 1. Navigate to the website
