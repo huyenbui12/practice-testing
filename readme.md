@@ -41,7 +41,7 @@
     }
 }
 ```
-- Add the new `scripts` into the `package.json` (Ex: `bta`)
+- Add the new `scripts` into the `package.json` (Ex: `apply`)
 
 #### package.json
 ```json
