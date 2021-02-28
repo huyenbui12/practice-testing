@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint",
     "signup": "npx wdio wdio.conf.js --suite signup",
     "signin": "npx wdio wdio.conf.js --suite signin",
     "apply": "npx wdio wdio.conf.js --suite apply"
@@ -18,6 +19,10 @@
     "@wdio/spec-reporter": "^7.0.7",
     "@wdio/sync": "^7.0.7",
     "chromedriver": "^88.0.0",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "wdio-chromedriver-service": "^7.0.0"
-  }
+  },
+  "dependencies": {}
 }

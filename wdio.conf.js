@@ -1,3 +1,8 @@
+/* eslint-disable linebreak-style */
+// eslint-disable-next-line linebreak-style
+/* eslint-disable max-len */
+/* eslint-disable indent */
+/* eslint-disable linebreak-style */
 exports.config = {
     //
     // ====================
@@ -51,14 +56,13 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
-    
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
         maxInstances: 5,
         //
         browserName: 'chrome',
-        acceptInsecureCerts: true
+        acceptInsecureCerts: true,
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
@@ -112,7 +116,6 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
-    
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -135,14 +138,12 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec'],
 
-
-    
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000,
     },
     //
     // =====
@@ -224,7 +225,6 @@ exports.config = {
     // afterTest: function(test, context, { error, result, duration, passed, retries }) {
     // },
 
-
     /**
      * Hook that gets executed after the suite has ended
      * @param {Object} suite suite details
@@ -272,6 +272,6 @@ exports.config = {
     * @param {String} oldSessionId session ID of the old session
     * @param {String} newSessionId session ID of the new session
     */
-    //onReload: function(oldSessionId, newSessionId) {
-    //}
-}
+    // onReload: function(oldSessionId, newSessionId) {
+    // }
+};
